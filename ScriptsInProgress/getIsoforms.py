@@ -161,11 +161,12 @@ def write_out(count,dictionary,out):
 # genome sequence for the organism. Finally, it need a complete gene sequence for the gene 
 # being examined. This part of the code askes for the names of these files and opens them.
 # It also names and opens the output files.
+
    
 recount = (input("Please enter recount file name: "))	# give file containing the reads
 genefile = (input("Please enter genome file name: "))	# give the file with full genome
 original = (input("Please enter gene sequence file name: "))	# file with full sequence
-out1,out2,out3 = 'unique_isoforms.txt','NMD.txt','report.txt'	# name output files
+out1,out2,out3 = 'unique_isoforms.fasta','NMD.fasta','report.txt'	# name output files
 with (open(genefile, 'r') as seq,open(recount, 'r') as rec, \
       open(original, 'r') as ori,open(out1, 'w') as iso,open(out2, 'w') as nmd, \
       open(out3, 'w') as rep):                           # open all input and output files
@@ -344,7 +345,7 @@ with (open(genefile, 'r') as seq,open(recount, 'r') as rec, \
     rep.write(tabulate(output, headers = 'keys', tablefmt = 'fancy_grid')+ '\n\n')
     																# write table
     
- # Write the second table to file   
+# Write the second table to file   
     
     rep.write('Table of overlaps in the sequences being read.\n')	# write caption
     rep.write(tabulate(output2, headers = 'keys', tablefmt = 'fancy_grid'))
