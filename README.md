@@ -2,7 +2,7 @@
 BIFX 579 Spring 2024 Repository
 
 This repository contains code written by students in the Spring 2024 capstone course. 
-Students attempted to create the following tools:
+Students attempted to create the following tools, which are described in Projects2024.ppt:
 
 1) A tool to measure gene expression of a region denoted by genomic coordinates (i.e. chr2:123456-123456_+)
    across a selection of bigWig files downloaded from the Recount3 database (https://rna.recount.bio/)
