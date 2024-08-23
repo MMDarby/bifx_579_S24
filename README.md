@@ -11,3 +11,4 @@ Students attempted to create the following tools:
 4) A tool to generate a fasta with the amino acid sequenc for each novel isoform as well as annotated isoforms
    from the same gene. (This tool relies on some assumptions that we need to fix by determining full length isoforms.)
 5) A tool to generate 3D models of the novel protein isoform and compare it to annotated isoforms
+6) A tool to predict GO annotations of a novel protein isoform based on sequence
